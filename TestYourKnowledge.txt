@@ -1,0 +1,43 @@
+﻿Test your Knowledge
+
+1. Describe the problem generics address.
+- Generics address the problem of type safety and code reusablilty. In non-generic collecion, it has two key problems: 
+	+	Run time errors: Since type checking is deferred until runtime, adding or retrieveing an item of the wrong type can result in runtime exceptions.
+	+	Performance Overhead: Casting between different types incurs a performance penalty due to boxing and unboxing for value types.
+
+
+2. How would you create a list of strings, using the generic List class?
+List<string> stringList = new List<string>();
+
+3. How many generic type parameters does the Dictionary class have?
+-	The Dictionary class has two generic type: 
+	+ The key: represents the type of keys in the dictionary.
+	+ the value: represents the type of values associated with those keys.
+
+
+4. True/False. When a generic class has multiple type parameters, they must all match.
+this question is a little bit confusing.
+If it mean that if a types need to be match with the correct parameters type, it is true.
+If it mean that every parameters need to have the same type, it is false.
+
+
+5. What method is used to add items to a List object?
+-	The Add method is used to add items to a List object.
+
+6. Name two methods that cause items to be removed from a List.
+Remove: removes the first occurence of a specific object.
+RemoveAt: removes at specific index.
+
+7. How do you indicate that a class has a generic type parameter?
+By including angle brackets <T> after the class name, where T is the type parameter.
+
+8. True/False. Generic classes can only have one generic type parameter.
+False. A generic class can have multiple type parameters.
+
+9. True/False. Generic type constraints limit what can be used for the generic type.
+True
+
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+True
+
+
